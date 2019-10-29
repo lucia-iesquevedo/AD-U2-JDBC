@@ -7,7 +7,7 @@ package SpringTemplateCoffeeExample;
 
 import java.util.Objects;
 
-public class Coffee {
+public class Coffee extends Product {
 
     private String cof_name;
     private int supp_id;
@@ -68,7 +68,7 @@ public class Coffee {
 
     @Override
     public String toString() {
-        return "Coffee{" + "cof_name=" + cof_name + ", supp_id=" + supp_id + ", price=" + price + ", sales=" + sales + ", total=" + total + '}';
+        return "Coffee{" + "cof_name=" + cof_name + ", supp_id=" + supp_id + ", price=" + price + ", sales=" + sales + ", total=" + total + '}' + super.toString();
     }
 
 
